@@ -1,4 +1,4 @@
-# template
+# vue-template
 
 > A Vue.js template project for wechat development
 
