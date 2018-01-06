@@ -4,9 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <title>template</title>
+    <meta id="eqMobileViewport" name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=no">
   </head>
   <body>
     <div id="app-box"></div>
     <!-- built files will be auto injected -->
+
+    <script>
+      var g = document.documentElement.clientWidth / 320;
+      document.getElementById('eqMobileViewport').setAttribute("content", "width=320, initial-scale=" + g + ", maximum-scale=" + g + ", user-scalable=no")
+    </script>
   </body>
 </html>
