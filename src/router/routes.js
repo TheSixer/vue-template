@@ -1,9 +1,9 @@
-const hello = r => require.ensure([], () => r(require('@/components/HelloWorld.vue')), 'hello')
+const home = r => require.ensure([], () => r(require('@/views/index.vue')), 'home')
 
 export default [{
   path: '',
   meta: {
     title: 'home'
   },
-  component: hello
+  component: home
 }]

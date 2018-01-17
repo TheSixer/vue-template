@@ -11,10 +11,15 @@ export default {
 </script>
 
 <style lang="less">
+@import 'styles/main.css';
 @import '~vux/src/styles/reset.less';
 
 body {
-  font-size: 62.5%;
-  background-color: #fbf9fe;
+  background-color: rgba(229,229,229,1);
+  #app {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+  }
 }
 </style>
