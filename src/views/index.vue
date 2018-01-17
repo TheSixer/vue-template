@@ -2,19 +2,18 @@
   <div class="home">
     <swiper :options="swiperOption" ref="mySwiper">
       <!-- slides -->
-      <swiper-slide>I'm Slide 1</swiper-slide>
-      <swiper-slide>I'm Slide 2</swiper-slide>
-      <swiper-slide>I'm Slide 3</swiper-slide>
-      <swiper-slide>I'm Slide 4</swiper-slide>
-      <swiper-slide>I'm Slide 5</swiper-slide>
-      <swiper-slide>I'm Slide 6</swiper-slide>
-      <swiper-slide>I'm Slide 7</swiper-slide>
+      <swiper-slide v-for="(item, index) of slides" :key="index">
+        <img class="banner" src="../assets/mine_bg.png" alt="">
+      </swiper-slide>
       <!-- Optional controls -->
-      <div class="swiper-pagination"  slot="pagination"></div>//
-      <div class="swiper-button-prev" slot="button-prev"></div>
-      <div class="swiper-button-next" slot="button-next"></div>
-      <div class="swiper-scrollbar"   slot="scrollbar"></div>
+      <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
+
+    <div class="body">
+      <div class="memberInfo">
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -29,21 +28,12 @@ export default {
   },
   data () {
     return {
+      slides: [1, 2, 3, 4, 5],
       swiperOption: {
-        notNextTick: true,
         autoplay: 3000,
-        direction: 'vertical',
-        grabCursor: true,
-        setWrapperSize: true,
-        autoHeight: true,
+        loop: true,
         pagination: '.swiper-pagination',
-        paginationClickable: true,
-        prevButton: '.swiper-button-prev',
-        nextButton: '.swiper-button-next',
-        scrollbar: '.swiper-scrollbar',
-        mousewheelControl: true,
-        observeParents: true,
-        debugger: true
+        paginationClickable: true
       }
     }
   }
@@ -53,4 +43,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
 
+.home {
+  .banner {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+}
 </style>
