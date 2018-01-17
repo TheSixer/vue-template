@@ -5,6 +5,10 @@ import FastClick from 'fastclick'
 import router from './router'
 import App from './App'
 
+//  轮播插件
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+Vue.use(VueAwesomeSwiper)
+
 FastClick.attach(document.body)
 
 Vue.config.productionTip = false
