@@ -1,4 +1,4 @@
-const home = r => require.ensure([], () => r(require('@/views/index.vue')), 'home')
+const home = r => require.ensure([], () => r(require('@/views/mine/Yhq_details.vue')), 'home')
 
 export default [{
   path: '',
