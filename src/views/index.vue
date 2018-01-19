@@ -50,6 +50,22 @@
               </div>
             </div>
           </li>
+          <li>
+            <div class="cardItem">
+              <div class="cardLogo" :style="{background: '#000'}">
+
+              </div>
+              <div class="cardInfo">
+                <div class="info">
+                  <p>酷乐潮玩五角场店满288减38</p>
+                  <span>有效期致：2017-12-30</span>
+                </div>
+                <span>
+                  <button type="button" name="button">去领取</button>
+                </span>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -177,6 +193,7 @@ export default {
                 display: inline-block;
                 width: 1.6rem;
                 height: .8rem;
+                box-sizing: border-box;
                 border-right: 1px solid rgba(191,191,191,1);
                 border-bottom: 1px solid rgba(191,191,191,1);
                 border-left: 1px solid rgba(191,191,191,1);
@@ -192,6 +209,7 @@ export default {
                 display: inline-block;
                 width: 1.6rem;
                 height: .8rem;
+                box-sizing: border-box;
                 border-right: 1px solid rgba(191,191,191,1);
                 border-top: 1px solid rgba(191,191,191,1);
                 border-left: 1px solid rgba(191,191,191,1);
