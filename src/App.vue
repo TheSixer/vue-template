@@ -13,6 +13,7 @@ export default {
 <style lang="less">
 @import 'styles/main.css';
 @import '~vux/src/styles/reset.less';
+@import 'swiper/dist/css/swiper.css';
 
 body {
   background-color: rgba(229,229,229,1);
